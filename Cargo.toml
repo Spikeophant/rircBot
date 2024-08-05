@@ -1,0 +1,17 @@
+[package]
+name = "rirc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.10.6"
+serde_json = "1.0.122"
+tokio = { version = "1.39.2", features = ["full"] }
+reqwest = { version = "0.12.5", features = ["json"] }
+irc = { version = "1.0.0", features = ["tokio-rustls"] }
+futures-util = "0.3.30"
+clap = { version = "4.5.13", features = ["derive"] }
+openssl = "0.10.66"
+webpki-roots = "0.26.3"
+tokio-rustls = "0.26.0"
+rustls = "0.23.12"
